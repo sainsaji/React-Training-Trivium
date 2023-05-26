@@ -1,20 +1,18 @@
-
-import './App.css'
-import Content from './assets/Component/Content'
-import Header from './assets/Component/Header'
-import Menu from './assets/Component/Menu'
-import Footer from './assets/Component/Footer'
+import "./App.css";
+import Content from "./Component/Content";
+import Header from "./Component/Header";
+import Menu from "./Component/Menu";
+import Footer from "./Component/Footer";
 
 function App() {
   return (
-    <div >
+    <div>
       <Menu></Menu>
       <Header></Header>
       <Content></Content>
       <Footer></Footer>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
