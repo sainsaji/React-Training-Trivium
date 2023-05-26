@@ -1,13 +1,15 @@
 function Header() {
   const menuItem = ["Home", "Features", "Pricing", "Diabled"];
 
+  const menuMap = new Map();
+  menuMap.set(0, "home.html");
+  menuMap.set(1, "features.html");
+  menuMap.set(2, "pricing.html");
+
   const handleMenuClick = (index: number) => {
-    if (index === 0) {
-      window.location.href = "home.html";
-    } else if (index === 1) {
-      window.location.href = "features.html";
-    } else {
-      window.location.href = "pricing.html";
+    const url = menuMap.get(index);
+    if (url) {
+      window.location.href = url;
     }
   };
 
