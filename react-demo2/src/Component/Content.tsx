@@ -1,3 +1,7 @@
+import Alert from "./Alert";
+import FavColor from "./FavColor";
+import Messager from "./Messager";
+
 function Content() {
   let gameList = ["Assassin's Creed", "Watch-Dogs", "Far Cry"];
   const handleClick = (index: number, x: string) => {
@@ -5,6 +9,10 @@ function Content() {
   };
   return (
     <div>
+      <div className="but-container">
+        <FavColor></FavColor>
+        <Messager message="This is from Content"></Messager>
+      </div>
       <div
         id="carouselBasicExample"
         className="carousel slide carousel-fade"

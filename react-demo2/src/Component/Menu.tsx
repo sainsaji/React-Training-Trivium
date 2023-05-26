@@ -1,5 +1,9 @@
+import React, { useState } from "react";
+import FavColor from "./FavColor";
+
 function Header() {
   const menuItem = ["Home", "Features", "Pricing", "Diabled"];
+  const [darkMode, setDarkMode] = useState(false);
 
   const menuMap = new Map();
   menuMap.set(0, "home.html");
@@ -8,13 +12,20 @@ function Header() {
 
   const handleMenuClick = (index: number) => {
     const url = menuMap.get(index);
+    darkMode ? setDarkMode(false) : setDarkMode(true);
     if (url) {
-      window.location.href = url;
+      // window.location.href = url;
     }
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      className={
+        darkMode
+          ? "navbar navbar-expand-lg navbar-dark bg-dark"
+          : "navbar navbar-expand-lg navbar-light bg-light"
+      }
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Navbar

@@ -4,3 +4,27 @@
 #body{
   padding: 0px;
 }
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.explosion {
+  animation: explode 0.5s ease forwards;
+}
+
+.but-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}

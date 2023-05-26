@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Menu></Menu>
-      <Header></Header>
+      <Header heading="Welcome Sain"></Header>
       <Content></Content>
       <Footer></Footer>
     </div>
