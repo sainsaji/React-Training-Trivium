@@ -6,16 +6,14 @@ import Menu from './assets/Component/Menu'
 import Footer from './assets/Component/Footer'
 
 function App() {
-  
   return (
-    <div>
-      <Header></Header>
+    <div >
       <Menu></Menu>
+      <Header></Header>
       <Content></Content>
       <Footer></Footer>
     </div>
     
-
   )
 }
 
